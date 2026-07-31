@@ -1,3 +1,6 @@
+
+/* Index */
+
 *{
 margin:0;
 padding:0;
@@ -256,5 +259,46 @@ grid-template-columns:1fr;
 gap:30px;
 }
 
+
+}
+
+
+/* Services */
+
+
+/* Technology Grid */
+
+.tech-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+
+.tech-grid div{
+background:#f8fafc;
+padding:30px;
+border-radius:15px;
+text-align:center;
+font-weight:600;
+line-height:2;
+}
+
+
+
+@media(max-width:900px){
+
+.tech-grid{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+
+@media(max-width:500px){
+
+.tech-grid{
+grid-template-columns:1fr;
+}
 
 }
