@@ -976,3 +976,96 @@ padding:20px;
 }
 
 }
+
+
+
+
+/* Contact */
+
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:start;
+}
+
+
+
+.contact-form{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 15px 40px #0001;
+}
+
+
+
+.contact-form form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+
+
+.contact-form input,
+.contact-form textarea{
+padding:15px;
+border:1px solid #cbd5e1;
+border-radius:10px;
+font-size:16px;
+}
+
+
+
+.contact-form textarea{
+height:150px;
+resize:none;
+}
+
+
+
+.contact-info{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+
+
+.info-box{
+background:#f8fafc;
+padding:25px;
+border-radius:15px;
+}
+
+
+
+.meeting{
+text-align:center;
+}
+
+
+
+.map-box{
+height:350px;
+background:#e2e8f0;
+border-radius:20px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:25px;
+font-weight:700;
+}
+
+
+
+@media(max-width:900px){
+
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+}
