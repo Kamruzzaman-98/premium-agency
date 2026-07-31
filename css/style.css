@@ -436,3 +436,99 @@ grid-template-columns:1fr;
 }
 
 }
+
+
+/* Case Studies */
+
+
+.case-intro{
+color:#64748b;
+margin:20px 0 40px;
+}
+
+
+
+.case-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+
+
+.case-box{
+background:#f8fafc;
+padding:35px;
+border-radius:20px
+}
+
+
+.case-box ul{
+margin-top:20px;
+padding-left:20px;
+}
+
+
+
+.case-box li{
+margin-bottom:12px;
+}
+
+
+.process-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+
+
+.process-grid div{
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+}
+
+
+
+.process-grid span{
+font-size:35px;
+color:#60a5fa;
+font-weight:800;
+}
+
+
+
+.testimonial{
+text-align:center;
+padding:40px;
+}
+
+
+.testimonial h2{
+font-size:35px;
+}
+
+
+
+@media(max-width:900px){
+
+.case-grid{
+grid-template-columns:1fr;
+}
+
+
+.process-grid{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+
+@media(max-width:500px){
+
+.process-grid{
+grid-template-columns:1fr;
+}
+
+}
