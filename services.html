@@ -1,228 +1,171 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Services | ABC</title>
+    <title>Services | ABC Web Solutions</title>
 
-    <meta
-      name="description"
-      content="Professional web development, ecommerce, software and digital solutions."
-    />
+    <link rel="stylesheet" href="assets/css/base.css" />
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="assets/css/components.css" />
+
+    <link rel="stylesheet" href="assets/css/animation.css" />
+
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <link rel="stylesheet" href="assets/css/services.css" />
   </head>
 
   <body>
-    <!-- Navbar -->
+    <!-- HEADER -->
 
-    <header>
-      <nav class="navbar container">
-        <div class="logo">ABC<span>XYZ</span></div>
+    <header class="header">
+      <div class="container nav">
+        <div class="logo">ABC<span>.</span></div>
 
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="case-studies.html">Case Studies</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <div class="menu-toggle">☰</div>
+
+        <ul class="menu">
+          <li>
+            <a href="index.html"> Home </a>
+          </li>
+
+          <li>
+            <a class="active" href="services.html"> Services </a>
+          </li>
+
+          <li>
+            <a href="about.html"> About </a>
+          </li>
+
+          <li>
+            <a href="contact.html"> Contact </a>
+          </li>
         </ul>
 
-        <a href="client-portal.html" class="btn"> Client Portal </a>
-      </nav>
+        <a href="contact.html" class="btn"> Get Started </a>
+      </div>
     </header>
 
-    <!-- Service Hero -->
+    <!-- HERO -->
 
-    <section class="hero">
+    <section class="service-hero">
       <div class="container">
-        <div class="hero-content">
-          <h1>Digital Solutions Designed For Business Growth</h1>
+        <h1>Professional Digital Services</h1>
 
-          <p>
-            We create powerful websites, web applications, and digital products
-            that help businesses succeed online.
-          </p>
+        <p>
+          We create powerful websites, applications and digital solutions that
+          help businesses grow.
+        </p>
+      </div>
+    </section>
 
-          <a href="#" class="btn"> Discuss Your Project </a>
+    <!-- SERVICES DETAILS -->
+
+    <section class="service-details">
+      <div class="container">
+        <div class="detail-grid">
+          <div class="detail-card">
+            <h2>💻 Web Development</h2>
+
+            <p>
+              We build modern, fast and responsive websites using latest
+              technologies.
+            </p>
+
+            <ul>
+              <li>Frontend Development</li>
+
+              <li>Backend Development</li>
+
+              <li>CMS Development</li>
+
+              <li>API Integration</li>
+            </ul>
+          </div>
+
+          <div class="detail-card">
+            <h2>🎨 UI/UX Design</h2>
+
+            <p>
+              We design user-friendly interfaces that create better customer
+              experiences.
+            </p>
+
+            <ul>
+              <li>User Research</li>
+
+              <li>Wireframe Design</li>
+
+              <li>Prototype Creation</li>
+
+              <li>Design System</li>
+            </ul>
+          </div>
+
+          <div class="detail-card">
+            <h2>🛒 E-Commerce</h2>
+
+            <p>Complete online store solutions for growing businesses.</p>
+
+            <ul>
+              <li>Product Management</li>
+
+              <li>Payment Integration</li>
+
+              <li>Order System</li>
+
+              <li>Security Setup</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Services List -->
+    <!-- PROCESS -->
 
-    <section class="section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Our Services</h2>
-
-          <p>Complete technology solutions under one roof</p>
-        </div>
-
-        <div class="cards">
-          <div class="card">
-            <h3>🌐 Website Development</h3>
-
-            <p>
-              Custom responsive websites built with modern technologies,
-              optimized for speed and SEO.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>🛒 E-Commerce Development</h3>
-
-            <p>
-              Online stores with payment integration, inventory management and
-              secure checkout.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>⚙ Custom Web Application</h3>
-
-            <p>
-              Business automation systems, dashboards and SaaS applications.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>🎨 UI/UX Design</h3>
-
-            <p>Modern user interfaces focused on better user experience.</p>
-          </div>
-
-          <div class="card">
-            <h3>🚀 SEO Optimization</h3>
-
-            <p>
-              Technical SEO and performance improvements to increase search
-              visibility.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>🔒 Website Security</h3>
-
-            <p>Secure development with protection, backup and monitoring.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Process -->
-
-    <section class="section dark">
+    <section class="process">
       <div class="container">
         <div class="section-title">
           <h2>Our Development Process</h2>
-
-          <p>A simple and transparent workflow</p>
         </div>
 
-        <div class="cards">
-          <div class="card">
-            <h3>01. Discovery</h3>
-
-            <p>Understanding your business goals and requirements.</p>
-          </div>
-
-          <div class="card">
-            <h3>02. Planning</h3>
-
-            <p>Creating strategy, wireframe and project roadmap.</p>
-          </div>
-
-          <div class="card">
-            <h3>03. Development</h3>
-
-            <p>Writing clean and scalable code.</p>
-          </div>
-
-          <div class="card">
-            <h3>04. Deployment</h3>
-
-            <p>Testing, launching and providing support.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Technology -->
-
-    <section class="section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Technologies We Use</h2>
-        </div>
-
-        <div class="tech-grid">
+        <div class="process-grid">
           <div>
-            Frontend
-            <br />
-            React
-            <br />
-            Next.js
-            <br />
-            Vue.js
+            <span> 01 </span>
+
+            <h3>Planning</h3>
+
+            <p>Understanding your business goals.</p>
           </div>
 
           <div>
-            Backend
+            <span> 02 </span>
 
-            <br />
+            <h3>Design</h3>
 
-            Laravel
-
-            <br />
-
-            Node.js
-
-            <br />
-
-            Python
+            <p>Creating premium user experience.</p>
           </div>
 
           <div>
-            Database
+            <span> 03 </span>
 
-            <br />
+            <h3>Development</h3>
 
-            MySQL
-
-            <br />
-
-            MongoDB
-
-            <br />
-
-            PostgreSQL
+            <p>Building fast and secure solutions.</p>
           </div>
 
           <div>
-            Cloud
+            <span> 04 </span>
 
-            <br />
+            <h3>Launch</h3>
 
-            AWS
-
-            <br />
-
-            Docker
-
-            <br />
-
-            Cloudflare
+            <p>Deploy and maintain your project.</p>
           </div>
         </div>
       </div>
@@ -230,42 +173,18 @@
 
     <!-- CTA -->
 
-    <section class="cta">
+    <section class="service-cta">
       <div class="container">
         <h2>Have A Project Idea?</h2>
 
-        <p>Let's turn your idea into a powerful digital product.</p>
-
-        <a href="#" class="btn"> Start Now </a>
+        <a href="contact.html" class="btn"> Let's Talk </a>
       </div>
     </section>
 
     <footer>
-      <div class="container footer">
-        <div>
-          <h3>ABC</h3>
-
-          <p>Premium Web Development Company</p>
-        </div>
-
-        <div>
-          <h4>Services</h4>
-
-          <p>Development</p>
-
-          <p>SEO</p>
-
-          <p>Design</p>
-        </div>
-
-        <div>
-          <h4>Contact</h4>
-
-          <p>hello@abc.com</p>
-
-          <p>+880 123456789</p>
-        </div>
-      </div>
+      <p>© 2026 ABC Web Solutions. All Rights Reserved.</p>
     </footer>
+
+    <script src="assets/js/app.js"></script>
   </body>
 </html>

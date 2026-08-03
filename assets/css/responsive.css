@@ -250,3 +250,48 @@ grid-template-columns:1fr;
 
 
 }
+
+
+
+
+@media(max-width:900px){
+
+
+.detail-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.process-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+
+
+.service-hero h1{
+
+font-size:38px;
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.process-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+}
