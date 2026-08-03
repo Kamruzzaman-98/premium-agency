@@ -328,3 +328,29 @@ font-size:38px;
 
 
 }
+
+
+
+@media(max-width:900px){
+
+
+.blog-grid{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+.blog-hero h1{
+
+
+font-size:38px;
+
+
+}
+
+
+}

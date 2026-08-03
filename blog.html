@@ -1,158 +1,134 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Blog | ABC</title>
+    <title>Blog | ABC Web Solutions</title>
 
-    <meta
-      name="description"
-      content="Latest web development, technology and business growth articles."
-    />
+    <link rel="stylesheet" href="assets/css/base.css" />
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="assets/css/components.css" />
+
+    <link rel="stylesheet" href="assets/css/animation.css" />
+
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <link rel="stylesheet" href="assets/css/blog.css" />
   </head>
 
   <body>
-    <!-- Navbar -->
+    <!-- HEADER -->
 
-    <header>
-      <nav class="navbar container">
-        <div class="logo">ABC<span>XYZ</span></div>
+    <header class="header">
+      <div class="container nav">
+        <div class="logo">ABC<span>.</span></div>
 
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="case-studies.html">Case Studies</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <div class="menu-toggle">☰</div>
+
+        <ul class="menu">
+          <li>
+            <a href="index.html"> Home </a>
+          </li>
+
+          <li>
+            <a href="services.html"> Services </a>
+          </li>
+
+          <li>
+            <a href="portfolio.html"> Portfolio </a>
+          </li>
+
+          <li>
+            <a class="active" href="blog.html"> Blog </a>
+          </li>
+
+          <li>
+            <a href="about.html"> About </a>
+          </li>
+
+          <li>
+            <a href="contact.html"> Contact </a>
+          </li>
         </ul>
 
-        <a href="client-portal.html" class="btn"> Client Portal </a>
-      </nav>
+        <a href="contact.html" class="btn"> Get Started </a>
+      </div>
     </header>
 
-    <!-- Hero -->
+    <!-- BLOG HERO -->
 
-    <section class="hero">
+    <section class="blog-hero">
       <div class="container">
-        <h1>Technology Insights & Development Resources</h1>
+        <h1>Latest Technology Insights</h1>
 
         <p>
-          Learn about web development, SEO, UI/UX and digital growth strategies.
+          Learn about web development, design trends and digital growth
+          strategies.
         </p>
-
-        <div class="blog-search">
-          <input type="text" placeholder="Search articles..." />
-
-          <button>Search</button>
-        </div>
       </div>
     </section>
 
-    <!-- Categories -->
+    <!-- BLOG SECTION -->
 
-    <section class="section">
-      <div class="container">
-        <div class="categories">
-          <button class="active">All</button>
-
-          <button>Web Development</button>
-
-          <button>SEO</button>
-
-          <button>Design</button>
-
-          <button>Business</button>
-
-          <button>AI</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Featured Blog -->
-
-    <section class="section">
-      <div class="container">
-        <div class="featured-blog">
-          <div class="featured-image">Featured Article</div>
-
-          <div>
-            <h2>How To Build A Successful Business Website In 2026</h2>
-
-            <p>
-              A complete guide about planning, designing and developing a
-              professional website.
-            </p>
-
-            <a href="#" class="btn"> Read Article </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Blog Cards -->
-
-    <section class="section">
+    <section class="blog-section">
       <div class="container">
         <div class="section-title">
           <h2>Latest Articles</h2>
+
+          <p>Useful knowledge for your digital journey.</p>
         </div>
 
         <div class="blog-grid">
           <div class="blog-card">
-            <div class="blog-image">Web Development</div>
+            <img src="assets/images/img.png" />
 
             <div class="blog-content">
-              <h3>React vs Next.js</h3>
+              <span> Web Development </span>
 
-              <p>Which technology is better for modern websites?</p>
+              <h3>Why Modern Websites Need Better Performance</h3>
+
+              <p>
+                Learn how optimized websites improve user experience and
+                business growth.
+              </p>
 
               <a href="#"> Read More → </a>
             </div>
           </div>
 
           <div class="blog-card">
-            <div class="blog-image">SEO</div>
+            <img src="assets/images/img.png" />
 
             <div class="blog-content">
-              <h3>SEO Tips For New Websites</h3>
+              <span> UI/UX Design </span>
 
-              <p>How to rank your website on Google.</p>
+              <h3>Design Trends That Improve Conversion</h3>
+
+              <p>
+                Discover modern interface techniques for better customer
+                engagement.
+              </p>
 
               <a href="#"> Read More → </a>
             </div>
           </div>
 
           <div class="blog-card">
-            <div class="blog-image">AI</div>
+            <img src="assets/images/img.png" />
 
             <div class="blog-content">
-              <h3>How AI Is Changing Web Development</h3>
+              <span> Technology </span>
 
-              <p>Future of AI-powered applications.</p>
+              <h3>Future Of Web Applications</h3>
 
-              <a href="#"> Read More → </a>
-            </div>
-          </div>
-
-          <div class="blog-card">
-            <div class="blog-image">Business</div>
-
-            <div class="blog-content">
-              <h3>Why Every Business Needs A Website</h3>
-
-              <p>Digital presence strategy for companies.</p>
+              <p>
+                Explore how new technologies are changing digital businesses.
+              </p>
 
               <a href="#"> Read More → </a>
             </div>
@@ -161,54 +137,22 @@
       </div>
     </section>
 
-    <!-- Newsletter -->
+    <!-- NEWSLETTER CTA -->
 
-    <section class="section dark">
-      <div class="container newsletter">
-        <h2>Subscribe To Our Newsletter</h2>
-
-        <p>Get latest technology updates and business tips.</p>
-
-        <div>
-          <input type="email" placeholder="Enter your email" />
-
-          <button class="btn">Subscribe</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-
-    <section class="cta">
+    <section class="blog-cta">
       <div class="container">
-        <h2>Need Help With Your Website?</h2>
+        <h2>Stay Updated With Digital Trends</h2>
 
-        <a href="#" class="btn"> Contact Our Team </a>
+        <p>Subscribe for latest technology insights.</p>
+
+        <a href="contact.html" class="btn"> Subscribe </a>
       </div>
     </section>
 
     <footer>
-      <div class="container footer">
-        <div>
-          <h3>TechNova</h3>
-
-          <p>Premium Web Development Agency</p>
-        </div>
-
-        <div>
-          <h4>Resources</h4>
-
-          <p>Blog</p>
-
-          <p>FAQ</p>
-        </div>
-
-        <div>
-          <h4>Contact</h4>
-
-          <p>hello@abc.com</p>
-        </div>
-      </div>
+      <p>© 2026 ABC Web Solutions. All Rights Reserved.</p>
     </footer>
+
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
