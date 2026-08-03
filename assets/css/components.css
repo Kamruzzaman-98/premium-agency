@@ -1,0 +1,180 @@
+/* =========================
+   BUTTON COMPONENTS
+========================= */
+
+
+.btn{
+
+display:inline-block;
+
+padding:14px 32px;
+
+background:#2563EB;
+
+color:white;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:0.3s;
+
+cursor:pointer;
+
+}
+
+
+
+.btn:hover{
+
+background:#38BDF8;
+
+transform:translateY(-3px);
+
+}
+
+
+
+
+.btn-outline{
+
+display:inline-block;
+
+padding:13px 30px;
+
+border:2px solid #38BDF8;
+
+color:white;
+
+border-radius:50px;
+
+font-weight:600;
+
+margin-left:15px;
+
+transition:0.3s;
+
+}
+
+
+
+.btn-outline:hover{
+
+background:#38BDF8;
+
+color:#0F172A;
+
+}
+
+
+
+
+
+/* =========================
+   SERVICE CARD
+========================= */
+
+
+.card{
+
+background:white;
+
+padding:40px 30px;
+
+border-radius:20px;
+
+box-shadow:
+
+0 20px 40px rgba(15,23,42,0.08);
+
+transition:0.4s;
+
+border:1px solid #e2e8f0;
+
+}
+
+
+
+.card h3{
+
+font-size:24px;
+
+margin-bottom:15px;
+
+color:#0F172A;
+
+}
+
+
+
+.card p{
+
+line-height:1.7;
+
+color:#64748B;
+
+}
+
+
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:
+
+0 25px 60px rgba(37,99,235,0.15);
+
+border-color:#38BDF8;
+
+}
+
+
+
+
+
+
+/* =========================
+   SECTION STYLE
+========================= */
+
+
+.section-title h2{
+
+font-size:42px;
+
+color:#0F172A;
+
+}
+
+
+
+.section-title p{
+
+margin-top:15px;
+
+color:#64748B;
+
+font-size:18px;
+
+}
+
+
+
+
+
+/* =========================
+   HERO BUTTON GROUP
+========================= */
+
+
+.hero-buttons{
+
+display:flex;
+
+align-items:center;
+
+margin-top:35px;
+
+}

@@ -1,0 +1,137 @@
+/* =========================
+ TABLET
+========================= */
+
+
+@media(max-width:900px){
+
+
+
+.menu{
+
+display:none;
+
+}
+
+
+
+.hero-content{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+
+.hero-text{
+
+width:100%;
+
+}
+
+
+
+.hero-image{
+
+width:80%;
+
+}
+
+
+
+.hero-text h1{
+
+font-size:42px;
+
+}
+
+
+
+.service-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+
+}
+
+
+
+
+
+/* =========================
+ MOBILE
+========================= */
+
+
+@media(max-width:600px){
+
+
+
+.logo{
+
+font-size:26px;
+
+}
+
+
+
+.hero{
+
+padding:70px 0;
+
+}
+
+
+
+.hero-text h1{
+
+font-size:34px;
+
+}
+
+
+
+.hero-text p{
+
+font-size:16px;
+
+}
+
+
+
+.btn{
+
+padding:12px 25px;
+
+}
+
+
+
+.section-title h2{
+
+font-size:32px;
+
+}
+
+
+
+.card{
+
+padding:30px 20px;
+
+}
+
+
+}
