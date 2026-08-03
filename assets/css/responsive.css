@@ -1,74 +1,66 @@
-/* =========================
- TABLET
-========================= */
-
-
 @media(max-width:900px){
+
+
+.menu-toggle{
+
+display:block;
+
+}
 
 
 
 .menu{
+
+
+position:absolute;
+
+top:80px;
+
+left:0;
+
+width:100%;
+
+background:#0F172A;
+
+flex-direction:column;
+
+align-items:center;
+
+padding:30px 0;
+
+
+transform:
+
+translateY(-150%);
+
+
+transition:.4s;
+
+
+}
+
+
+
+.menu.active{
+
+
+transform:
+
+translateY(0);
+
+
+}
+
+
+
+.nav .btn{
 
 display:none;
 
 }
 
 
-
-.hero-content{
-
-flex-direction:column;
-
-text-align:center;
-
 }
-
-
-
-.hero-text{
-
-width:100%;
-
-}
-
-
-
-.hero-image{
-
-width:80%;
-
-}
-
-
-
-.hero-text h1{
-
-font-size:42px;
-
-}
-
-
-
-.service-grid{
-
-grid-template-columns:1fr;
-
-}
-
-
-
-.hero-buttons{
-
-justify-content:center;
-
-}
-
-
-}
-
-
-
-
 
 /* =========================
  MOBILE
@@ -132,6 +124,101 @@ font-size:32px;
 padding:30px 20px;
 
 }
+
+
+}
+
+
+
+
+@media(max-width:900px){
+
+
+.about-content{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+.about-text,
+.about-image{
+
+width:100%;
+
+}
+
+
+.about-text h1{
+
+font-size:38px;
+
+}
+
+
+
+.info-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.choose-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.stats-grid{
+
+grid-template-columns:1fr;
+
+gap:40px;
+
+}
+
+
+}
+
+
+@media(max-width:900px){
+
+
+
+.contact-grid{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+.contact-hero h1{
+
+
+font-size:38px;
+
+
+}
+
+
+
+.contact-cta h2{
+
+
+font-size:30px;
+
+
+}
+
 
 
 }
