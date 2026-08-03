@@ -222,3 +222,31 @@ font-size:30px;
 
 
 }
+
+
+
+@media(max-width:900px){
+
+
+.service-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.service-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+}
