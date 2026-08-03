@@ -1,0 +1,135 @@
+/* =========================
+ DARK LIGHT MODE
+========================= */
+
+
+
+body{
+
+transition:
+
+background .4s,
+color .4s;
+
+}
+
+
+
+
+
+/* DARK MODE */
+
+
+body.dark{
+
+
+background:#020617;
+
+color:#e2e8f0;
+
+
+}
+
+
+
+
+
+body.dark .header{
+
+
+background:#020617;
+
+
+}
+
+
+
+
+
+body.dark .card,
+body.dark .service-card,
+body.dark .detail-card,
+body.dark .project-card,
+body.dark .blog-card,
+body.dark .contact-form,
+body.dark .contact-box,
+body.dark .info-card{
+
+
+background:#0f172a;
+
+border-color:#1e293b;
+
+
+}
+
+
+
+
+
+body.dark h1,
+body.dark h2,
+body.dark h3{
+
+
+color:white;
+
+
+}
+
+
+
+
+
+body.dark p{
+
+
+color:#cbd5e1;
+
+
+}
+
+
+
+
+
+.theme-toggle{
+
+
+width:45px;
+
+height:45px;
+
+
+border-radius:50%;
+
+
+border:none;
+
+
+background:#2563EB;
+
+
+color:white;
+
+
+font-size:20px;
+
+
+cursor:pointer;
+
+
+transition:.3s;
+
+
+}
+
+
+
+.theme-toggle:hover{
+
+
+transform:rotate(20deg);
+
+
+}

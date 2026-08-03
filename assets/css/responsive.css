@@ -354,3 +354,20 @@ font-size:38px;
 
 
 }
+
+
+@media(max-width:900px){
+
+
+.theme-toggle{
+
+
+margin-left:auto;
+
+margin-right:20px;
+
+
+}
+
+
+}
