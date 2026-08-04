@@ -1,14 +1,4 @@
 
-// Initialize AOS
-
-AOS.init({
-
-duration:1000,
-
-once:true
-
-});
-
 
 console.log("ABC Web Solutions Loaded");
 
@@ -215,4 +205,12 @@ const percent=(scrollTop/scrollHeight)*100;
 
 document.getElementById("progress-bar").style.width=percent+"%";
 
+});
+
+
+
+AOS.init({
+    duration: 900,
+    once: true,
+    easing: "ease-in-out"
 });
