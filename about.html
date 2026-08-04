@@ -28,6 +28,20 @@
   </head>
 
   <body>
+    <!-- PRELOADER -->
+
+    <div id="preloader">
+      <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <!-- Scroll Progress -->
+
+    <div id="progress-bar"></div>
+
     <!-- Topbar -->
 
     <div class="topbar">
@@ -97,9 +111,9 @@
               <a class="nav-link" href="portfolio.html"> Portfolio </a>
             </li>
 
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="blog.html"> Blog </a>
-            </li>
+            </li> -->
 
             <li class="nav-item">
               <a class="nav-link" href="contact.html"> Contact </a>
@@ -328,25 +342,29 @@
       <div class="container">
         <div class="row text-center g-4">
           <div class="col-lg-3 col-6">
-            <h2>250+</h2>
+            <h2 class="counter" data-target="250">250</h2>
+            <span>+</span>
 
             <p>Projects</p>
           </div>
 
           <div class="col-lg-3 col-6">
-            <h2>150+</h2>
+            <h2 class="counter" data-target="150">150</h2>
+            <span>+</span>
 
             <p>Clients</p>
           </div>
 
           <div class="col-lg-3 col-6">
-            <h2>5+</h2>
+            <h2 class="counter" data-target="5">5</h2>
+            <span>+</span>
 
             <p>Years</p>
           </div>
 
           <div class="col-lg-3 col-6">
-            <h2>20+</h2>
+            <h2 class="counter" data-target="20">20</h2>
+            <span>+</span>
 
             <p>Experts</p>
           </div>
