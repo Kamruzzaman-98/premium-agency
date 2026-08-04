@@ -2447,3 +2447,379 @@ position:relative;
 z-index:2;
 
 }
+
+
+/*=================================
+CONTACT SECTION
+==================================*/
+
+.contact-section{
+
+padding:100px 0;
+
+background:#f8fafc;
+
+}
+
+.contact-section h2{
+
+font-size:42px;
+
+font-weight:800;
+
+}
+
+.contact-text{
+
+margin:25px 0;
+
+color:#64748b;
+
+line-height:1.9;
+
+}
+
+.info-box{
+
+display:flex;
+
+align-items:flex-start;
+
+gap:20px;
+
+background:#fff;
+
+padding:25px;
+
+border-radius:20px;
+
+margin-bottom:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+}
+
+.info-box i{
+
+width:60px;
+
+height:60px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:#2563eb;
+
+color:#fff;
+
+font-size:24px;
+
+border-radius:50%;
+
+}
+
+.info-box h5{
+
+font-weight:700;
+
+margin-bottom:5px;
+
+}
+
+.info-box p{
+
+margin:0;
+
+color:#64748b;
+
+}
+
+.contact-form{
+
+background:#fff;
+
+padding:40px;
+
+border-radius:25px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.06);
+
+}
+
+.contact-form .form-control{
+
+padding:15px 18px;
+
+border-radius:12px;
+
+border:1px solid #dbe3ec;
+
+box-shadow:none;
+
+}
+
+.contact-form .form-control:focus{
+
+border-color:#2563eb;
+
+}
+
+.contact-form textarea{
+
+resize:none;
+
+}
+
+
+/*=================================
+CONTACT CTA
+==================================*/
+
+.contact-cta{
+
+padding:100px 0;
+
+background:#fff;
+
+}
+
+.contact-cta-box{
+
+background:linear-gradient(135deg,#2563eb,#0f172a);
+
+padding:70px;
+
+border-radius:30px;
+
+color:#fff;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.contact-cta-box::before{
+
+content:"";
+
+position:absolute;
+
+width:250px;
+
+height:250px;
+
+background:rgba(255,255,255,.08);
+
+border-radius:50%;
+
+top:-80px;
+
+right:-80px;
+
+}
+
+.contact-cta-box h2{
+
+font-size:42px;
+
+font-weight:800;
+
+margin-bottom:15px;
+
+}
+
+.contact-cta-box p{
+
+color:#dbeafe;
+
+margin:0;
+
+font-size:17px;
+
+}
+
+.contact-cta-box .btn{
+
+border-radius:50px;
+
+padding:15px 35px;
+
+font-weight:600;
+
+position:relative;
+
+z-index:2;
+
+}
+
+
+
+/*=================================
+OFFICE SECTION
+==================================*/
+
+.office-section{
+
+padding:100px 0;
+
+background:#fff;
+
+}
+
+.office-map{
+
+overflow:hidden;
+
+border-radius:25px;
+
+box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+height:100%;
+
+}
+
+.office-map iframe{
+
+width:100%;
+
+height:100%;
+
+min-height:520px;
+
+border:0;
+
+display:block;
+
+}
+
+.office-card{
+
+background:#f8fafc;
+
+padding:35px;
+
+border-radius:25px;
+
+box-shadow:0 20px 45px rgba(0,0,0,.06);
+
+height:100%;
+
+}
+
+.office-card h3{
+
+font-size:28px;
+
+font-weight:700;
+
+margin-bottom:25px;
+
+}
+
+.office-card ul{
+
+list-style:none;
+
+padding:0;
+
+margin:0;
+
+}
+
+.office-card ul li{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:14px 0;
+
+border-bottom:1px solid #e5e7eb;
+
+}
+
+.office-card ul li span{
+
+color:#64748b;
+
+}
+
+.office-card ul li strong{
+
+font-weight:600;
+
+}
+
+.office-contact{
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+margin-top:35px;
+
+padding:20px;
+
+background:#fff;
+
+border-radius:15px;
+
+}
+
+.office-contact i{
+
+width:55px;
+
+height:55px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:#2563eb;
+
+color:#fff;
+
+border-radius:50%;
+
+font-size:22px;
+
+}
+
+.office-contact h5{
+
+margin:0;
+
+font-size:18px;
+
+font-weight:700;
+
+}
+
+.office-contact p{
+
+margin:3px 0 0;
+
+color:#64748b;
+
+}
+
+.office-card .btn{
+
+padding:14px;
+
+border-radius:50px;
+
+font-weight:600;
+
+}

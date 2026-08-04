@@ -438,3 +438,84 @@ width:100%;
 }
 
 }
+
+
+
+@media(max-width:991px){
+
+.contact-section{
+
+padding:70px 0;
+
+}
+
+.contact-section h2{
+
+font-size:32px;
+
+}
+
+.contact-form{
+
+padding:25px;
+
+}
+
+}
+
+
+
+@media(max-width:991px){
+
+.contact-cta{
+
+padding:70px 0;
+
+}
+
+.contact-cta-box{
+
+padding:40px 25px;
+
+text-align:center;
+
+}
+
+.contact-cta-box h2{
+
+font-size:32px;
+
+}
+
+.contact-cta-box .btn{
+
+width:100%;
+
+margin-top:25px;
+
+}
+
+}
+
+
+@media(max-width:991px){
+
+.office-section{
+
+padding:70px 0;
+
+}
+
+.office-map iframe{
+
+min-height:350px;
+
+}
+
+.office-card{
+
+padding:25px;
+
+}
+
+}
