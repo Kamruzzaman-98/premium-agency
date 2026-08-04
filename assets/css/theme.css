@@ -133,3 +133,35 @@ transform:rotate(20deg);
 
 
 }
+
+
+
+body.dark .trust-section{
+
+
+background:#020617;
+
+
+}
+
+
+
+body.dark .stat-card{
+
+
+background:#0f172a;
+
+border-color:#1e293b;
+
+
+}
+
+
+
+body.dark .trust-text h2{
+
+
+color:white;
+
+
+}

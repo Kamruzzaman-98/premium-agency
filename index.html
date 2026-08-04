@@ -2,196 +2,949 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>ABC Web Solutions | Professional Web Development</title>
+    <title>ABC Web Solutions</title>
 
-    <!-- CSS Files -->
+    <!-- Bootstrap -->
 
-    <link rel="stylesheet" href="assets/css/base.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="assets/css/layout.css" />
+    <!-- Bootstrap Icons -->
 
-    <link rel="stylesheet" href="assets/css/components.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="assets/css/animation.css" />
+    <!-- Google Font -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Responsive CSS -->
 
     <link rel="stylesheet" href="assets/css/responsive.css" />
 
-    <link rel="stylesheet" href="assets/css/theme.css">
+    <!-- AOS Animation CSS -->
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <!-- ================= HEADER ================= -->
+    <!-- Topbar -->
 
-    <header class="header">
-      <div class="container nav">
-        <div class="logo">ABC<span>.</span></div>
+    <div class="topbar">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 d-none d-lg-flex">
+            <div class="topbar-left">
+              <span>
+                <i class="bi bi-envelope-fill"></i>
 
-        <!-- Mobile Menu Button -->
+                info@abcweb.com
+              </span>
 
-        <div class="menu-toggle">☰</div>
+              <span>
+                <i class="bi bi-telephone-fill"></i>
 
-        <ul class="menu">
-          <li>
-            <a href="index.html" class="active"> Home </a>
-          </li>
+                +8801700000000
+              </span>
+            </div>
+          </div>
 
-          <li>
-            <a href="services.html"> Services </a>
-          </li>
+          <div class="col-lg-6 text-lg-end text-center">
+            <div class="topbar-right">
+              <a href="#"><i class="bi bi-facebook"></i></a>
 
-          <li>
-            <a href="portfolio.html"> Portfolio </a>
-          </li>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
 
-          <li>
-            <a href="blog.html"> Blog </a>
-          </li>
+              <a href="#"><i class="bi bi-instagram"></i></a>
 
-          <li>
-            <a href="about.html"> About </a>
-          </li>
-
-          <li>
-            <a href="index.html#contact"> Contact </a>
-          </li>
-        </ul>
-
-        <button class="theme-toggle">🌙</button>
-
-        <a href="contact.html" class="btn"> Get Started </a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
-    </header>
+    </div>
 
-    <!-- ================= HERO SECTION ================= -->
+    <!-- Navbar -->
 
-    <section class="hero">
-      <div class="container hero-content">
-        <div class="hero-text">
-          <h1>
-            Building Premium
-            <span>Digital Experiences</span>
-          </h1>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#"> ABC </a>
 
-          <p>
-            ABC Web Solutions creates modern, high performance websites and web
-            applications for growing businesses.
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainMenu"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"> Home </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"> About </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="services.html"> Services </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html"> Portfolio </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html"> Blog </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"> Contact </a>
+            </li>
+          </ul>
+
+          <a href="#" class="btn btn-primary ms-lg-4"> Get Quote </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="hero" data-aos="fade-up">
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <!-- Left -->
+
+          <div class="col-lg-6">
+            <span class="hero-tag"> 🚀 Creative Digital Agency </span>
+
+            <h1 class="hero-title mt-4">
+              We Build Modern Websites That Grow Your Business
+            </h1>
+
+            <p class="hero-text mt-4">
+              ABC Web Solutions provides premium web development, UI/UX design,
+              eCommerce, and custom software solutions for startups and
+              businesses.
+            </p>
+
+            <div class="hero-buttons mt-5">
+              <a href="#" class="btn btn-primary btn-lg"> Get Started </a>
+
+              <a href="#" class="btn btn-outline-light btn-lg ms-3">
+                View Portfolio
+              </a>
+            </div>
+          </div>
+
+          <!-- Right -->
+
+          <div class="col-lg-6 position-relative">
+            <img
+              src="assets/images/hero.png"
+              class="img-fluid hero-img"
+              alt="Hero Image"
+            />
+
+            <div class="floating-card card-one">⭐ 5+ Years Experience</div>
+
+            <div class="floating-card card-two">❤️ 250+ Happy Clients</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUSTED CLIENTS -->
+
+    <section class="trusted">
+      <div class="container">
+        <div class="text-center">
+          <p class="trusted-title">Trusted By Companies Worldwide</p>
+
+          <div class="row align-items-center g-4 mt-4">
+            <div class="col-6 col-md-3">
+              <div class="client-logo">LOGO 01</div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="client-logo">LOGO 02</div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="client-logo">LOGO 03</div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="client-logo">LOGO 04</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATISTICS -->
+
+    <section class="stats">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-box">
+              <h2 class="counter" data-target="250">250</h2>
+              <span>+</span>
+
+              <p>Projects Completed</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-box">
+              <h2 class="counter" data-target="150">150</h2>
+              <span>+</span>
+
+              <p>Happy Clients</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-box">
+              <h2 class="counter" data-target="5">5</h2>
+              <span>+</span>
+
+              <p>Years Experience</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-box">
+              <h2 class="counter" data-target="20">20</h2>
+              <span>+</span>
+
+              <p>Expert Members</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about-section" data-aos="fade-up">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Image Side -->
+
+          <div class="col-lg-6">
+            <div class="about-image">
+              <img
+                src="assets/images/about.jpg"
+                class="img-fluid"
+                alt="About ABC Web Solutions"
+              />
+
+              <div class="experience-box">
+                <h3>5+</h3>
+
+                <p>Years Experience</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Side -->
+
+          <div class="col-lg-6">
+            <div class="about-content">
+              <span class="section-tag"> About Our Company </span>
+
+              <h2>We Create Digital Solutions That Drive Business Growth</h2>
+
+              <p>
+                ABC Web Solutions is a professional web development company
+                providing modern website design, eCommerce, custom web
+                applications and digital solutions for businesses worldwide.
+              </p>
+
+              <div class="about-features">
+                <div>
+                  <i class="bi bi-check-circle-fill"></i>
+
+                  Modern Responsive Website
+                </div>
+
+                <div>
+                  <i class="bi bi-check-circle-fill"></i>
+
+                  Clean & Professional UI Design
+                </div>
+
+                <div>
+                  <i class="bi bi-check-circle-fill"></i>
+
+                  Fast & Secure Development
+                </div>
+
+                <div>
+                  <i class="bi bi-check-circle-fill"></i>
+
+                  24/7 Technical Support
+                </div>
+              </div>
+
+              <a href="about.html" class="btn btn-primary mt-4"> Learn More </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+
+    <section class="services-section" data-aos="fade-up">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-tag"> Our Services </span>
+
+          <h2 class="mt-3">Complete Digital Solutions For Your Business</h2>
+
+          <p class="services-desc">
+            We build powerful digital products using modern technologies and
+            creative strategies.
           </p>
-
-          <div class="hero-buttons">
-            <a class="btn"> Start Project </a>
-
-            <a class="btn-outline"> Our Services </a>
-          </div>
         </div>
 
-        <div class="hero-image">
-          <img src="assets/images/img.png" />
+        <div class="row g-4">
+          <!-- Service 1 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+
+              <h4>Web Development</h4>
+
+              <p>
+                Modern responsive websites built with clean and scalable code.
+              </p>
+
+              <a href="services.html"> Read More → </a>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-cart3"></i>
+              </div>
+
+              <h4>E-Commerce Development</h4>
+
+              <p>Professional online stores with secure payment solutions.</p>
+
+              <a href="services.html"> Read More → </a>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-window"></i>
+              </div>
+
+              <h4>Web Application</h4>
+
+              <p>Custom business applications for your unique requirements.</p>
+
+              <a href="services.html"> Read More → </a>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-palette"></i>
+              </div>
+
+              <h4>UI/UX Design</h4>
+
+              <p>Beautiful user interfaces focused on better experience.</p>
+
+              <a href="services.html"> Read More → </a>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-search"></i>
+              </div>
+
+              <h4>SEO Optimization</h4>
+
+              <p>Improve your online visibility and search ranking.</p>
+
+              <a href="services.html"> Read More → </a>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-headset"></i>
+              </div>
+
+              <h4>Support & Maintenance</h4>
+
+              <p>Reliable technical support after project delivery.</p>
+
+              <a href="services.html"> Read More → </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= SERVICES ================= -->
+    <!-- PORTFOLIO SECTION -->
 
-    <!-- ================= PREMIUM SERVICES ================= -->
-
-    <section id="services" class="services">
+    <section class="portfolio-section" data-aos="fade-up">
       <div class="container">
-        <div class="section-title">
-          <h2>Our Professional Services</h2>
+        <div class="text-center mb-5">
+          <span class="section-tag"> Our Portfolio </span>
 
-          <p>Complete digital solutions for your business growth.</p>
+          <h2 class="mt-3">Recent Projects We Built</h2>
+
+          <p class="portfolio-desc">
+            Explore our latest website, eCommerce and custom application
+            projects.
+          </p>
         </div>
 
-        <div class="service-grid">
-          <div class="service-card">
-            <div class="service-icon">💻</div>
+        <div class="row g-4">
+          <!-- Project 1 -->
 
-            <h3>Web Development</h3>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-card">
+              <img src="assets/images/project1.jpg" alt="Project" />
 
-            <p>
-              High performance, responsive and scalable websites built with
-              modern technologies.
-            </p>
+              <div class="portfolio-overlay">
+                <span> Website </span>
 
-            <a href="#" class="service-link"> Learn More → </a>
+                <h4>Corporate Website</h4>
+
+                <a href="#"> View Project </a>
+              </div>
+            </div>
           </div>
 
-          <div class="service-card">
-            <div class="service-icon">🎨</div>
+          <!-- Project 2 -->
 
-            <h3>UI/UX Design</h3>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-card">
+              <img src="assets/images/project2.jpg" alt="Project" />
 
-            <p>
-              Creative interface design focused on user experience and business
-              conversion.
-            </p>
+              <div class="portfolio-overlay">
+                <span> E-Commerce </span>
 
-            <a href="#" class="service-link"> Learn More → </a>
+                <h4>Online Store</h4>
+
+                <a href="#"> View Project </a>
+              </div>
+            </div>
           </div>
 
-          <div class="service-card">
-            <div class="service-icon">🛒</div>
+          <!-- Project 3 -->
 
-            <h3>E-Commerce Development</h3>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-card">
+              <img src="assets/images/project3.jpg" alt="Project" />
 
-            <p>
-              Powerful online stores with secure payment and modern features.
-            </p>
+              <div class="portfolio-overlay">
+                <span> Web App </span>
 
-            <a href="#" class="service-link"> Learn More → </a>
+                <h4>Business Dashboard</h4>
+
+                <a href="#"> View Project </a>
+              </div>
+            </div>
           </div>
 
-          <div class="service-card">
-            <div class="service-icon">⚙️</div>
+          <!-- Project 4 -->
 
-            <h3>Web Application</h3>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-card">
+              <img src="assets/images/project4.jpg" alt="Project" />
 
-            <p>Custom web applications designed for business automation.</p>
+              <div class="portfolio-overlay">
+                <span> Landing Page </span>
 
-            <a href="#" class="service-link"> Learn More → </a>
+                <h4>SaaS Website</h4>
+
+                <a href="#"> View Project </a>
+              </div>
+            </div>
           </div>
 
-          <div class="service-card">
-            <div class="service-icon">🚀</div>
+          <!-- Project 5 -->
 
-            <h3>SEO Optimization</h3>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-card">
+              <img src="assets/images/project5.jpg" alt="Project" />
 
-            <p>Improve your online visibility and reach more customers.</p>
+              <div class="portfolio-overlay">
+                <span> Mobile App </span>
 
-            <a href="#" class="service-link"> Learn More → </a>
+                <h4>Startup App</h4>
+
+                <a href="#"> View Project </a>
+              </div>
+            </div>
           </div>
 
-          <div class="service-card">
-            <div class="service-icon">🔒</div>
+          <!-- Project 6 -->
 
-            <h3>Website Maintenance</h3>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-card">
+              <img src="assets/images/project6.jpg" alt="Project" />
 
-            <p>
-              Continuous updates, security monitoring and technical support.
-            </p>
+              <div class="portfolio-overlay">
+                <span> Dashboard </span>
 
-            <a href="#" class="service-link"> Learn More → </a>
+                <h4>Analytics System</h4>
+
+                <a href="#"> View Project </a>
+              </div>
+            </div>
           </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="portfolio.html" class="btn btn-primary">
+            View All Projects
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- ================= CONTACT ================= -->
+    <!-- WHY CHOOSE US -->
 
-    <section id="contact" class="contact">
+    <section class="why-section">
       <div class="container">
-        <h2>Let's Build Something Amazing</h2>
+        <div class="row align-items-center g-5">
+          <!-- Left Content -->
 
-        <a class="btn"> Contact Us </a>
+          <div class="col-lg-6">
+            <span class="section-tag"> Why Choose Us </span>
+
+            <h2 class="mt-3">We Deliver Quality Digital Solutions</h2>
+
+            <p class="why-text">
+              We combine creative design, modern technology and business
+              strategy to create digital products that help companies grow.
+            </p>
+
+            <div class="feature-list">
+              <div class="feature-item">
+                <i class="bi bi-check-circle-fill"></i>
+
+                Custom & Scalable Solutions
+              </div>
+
+              <div class="feature-item">
+                <i class="bi bi-check-circle-fill"></i>
+
+                Clean Professional Code
+              </div>
+
+              <div class="feature-item">
+                <i class="bi bi-check-circle-fill"></i>
+
+                Fast Delivery & Support
+              </div>
+
+              <div class="feature-item">
+                <i class="bi bi-check-circle-fill"></i>
+
+                Client Focused Approach
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content -->
+
+          <div class="col-lg-6">
+            <div class="skills-box">
+              <h4>Our Expertise</h4>
+
+              <div class="skill">
+                <div class="skill-title">
+                  Web Development
+
+                  <span> 95% </span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 95%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-title">
+                  UI/UX Design
+
+                  <span> 90% </span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-title">
+                  E-Commerce
+
+                  <span> 92% </span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 92%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-title">
+                  SEO Optimization
+
+                  <span> 85% </span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer>
-      <p>© 2026 ABC Web Solutions. All Rights Reserved.</p>
+    <!-- TESTIMONIAL -->
+
+    <section class="testimonial-section" data-aos="fade-up">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-tag"> Testimonials </span>
+
+          <h2 class="mt-3">What Our Clients Say</h2>
+
+          <p class="testimonial-desc">
+            Trusted by businesses and startups worldwide.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Review 1 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="client-info">
+                <img src="assets/images/client1.png" alt="client" />
+
+                <div>
+                  <h5>John Smith</h5>
+
+                  <p>CEO, Startup Company</p>
+                </div>
+              </div>
+
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+
+                <i class="bi bi-star-fill"></i>
+
+                <i class="bi bi-star-fill"></i>
+
+                <i class="bi bi-star-fill"></i>
+
+                <i class="bi bi-star-fill"></i>
+              </div>
+
+              <p>
+                "ABC Web Solutions created an amazing website for our business.
+                The design and performance were excellent."
+              </p>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="client-info">
+                <img src="assets/images/client2.jpg" alt="client" />
+
+                <div>
+                  <h5>Sarah Wilson</h5>
+
+                  <p>Marketing Manager</p>
+                </div>
+              </div>
+
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+
+                <i class="bi bi-star-fill"></i>
+
+                <i class="bi bi-star-fill"></i>
+
+                <i class="bi bi-star-fill"></i>
+
+                <i class="bi bi-star-fill"></i>
+              </div>
+
+              <p>
+                "Professional team with great communication. They delivered our
+                eCommerce platform perfectly."
+              </p>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="client-info">
+                <img src="assets/images/client3.png" />
+
+                <div>
+                  <h5>Michael Lee</h5>
+
+                  <p>Business Owner</p>
+                </div>
+              </div>
+
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+
+                <i class="bi bi-star-fill"></i>
+
+                <i class="bi bi-star-fill"></i>
+
+                <i class="bi bi-star-fill"></i>
+
+                <i class="bi bi-star-fill"></i>
+              </div>
+
+              <p>
+                "Fast delivery, clean code and excellent support. Highly
+                recommended."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <span> Let's Build Something Amazing </span>
+
+              <h2>Ready To Start Your Next Digital Project?</h2>
+
+              <p>
+                Contact ABC Web Solutions today and turn your idea into a
+                powerful digital product.
+              </p>
+            </div>
+
+            <div class="col-lg-4 text-lg-end">
+              <a href="contact.html" class="btn btn-light btn-lg">
+                Contact Us
+              </a>
+
+              <a href="#" class="btn btn-outline-light btn-lg ms-2">
+                Get Quote
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Company -->
+
+          <div class="col-lg-4">
+            <div class="footer-brand">
+              <h3>ABC</h3>
+
+              <p>
+                ABC Web Solutions is a professional web development company
+                creating modern digital solutions for businesses worldwide.
+              </p>
+
+              <div class="social-links">
+                <a href="#">
+                  <i class="bi bi-facebook"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-instagram"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+
+          <div class="col-lg-2 col-md-4">
+            <h5>Quick Links</h5>
+
+            <ul>
+              <li>
+                <a href="#"> Home </a>
+              </li>
+
+              <li>
+                <a href="about.html"> About </a>
+              </li>
+
+              <li>
+                <a href="services.html"> Services </a>
+              </li>
+
+              <li>
+                <a href="portfolio.html"> Portfolio </a>
+              </li>
+
+              <li>
+                <a href="contact.html"> Contact </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+
+          <div class="col-lg-3 col-md-4">
+            <h5>Services</h5>
+
+            <ul>
+              <li>
+                <a href="#"> Web Development </a>
+              </li>
+
+              <li>
+                <a href="#"> UI/UX Design </a>
+              </li>
+
+              <li>
+                <a href="#"> E-Commerce </a>
+              </li>
+
+              <li>
+                <a href="#"> Web Application </a>
+              </li>
+
+              <li>
+                <a href="#"> SEO Services </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+
+          <div class="col-lg-3 col-md-4">
+            <h5>Contact</h5>
+
+            <ul class="contact-list">
+              <li>
+                <i class="bi bi-geo-alt"></i>
+
+                Dhaka, Bangladesh
+              </li>
+
+              <li>
+                <i class="bi bi-envelope"></i>
+
+                info@abcweb.com
+              </li>
+
+              <li>
+                <i class="bi bi-telephone"></i>
+
+                +880 1700-000000
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-bottom">
+          <p>© 2026 ABC Web Solutions. All Rights Reserved.</p>
+        </div>
+      </div>
     </footer>
 
-    <script src="assets/js/app.js"></script>
+    <!-- Back To Top -->
+
+    <a href="#" class="back-top">
+      <i class="bi bi-arrow-up"></i>
+    </a>
+    <!-- Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Main JS -->
+
+    <script src="assets/js/main.js"></script>
+
+    <!-- AOS JS -->
   </body>
 </html>

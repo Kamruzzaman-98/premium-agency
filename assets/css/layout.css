@@ -76,24 +76,71 @@ font-weight:500;
 /* HERO */
 
 
+/* =========================
+ PREMIUM HERO
+========================= */
+
+
 .hero{
 
-padding:100px 0;
+
+position:relative;
+
+padding:120px 0;
 
 background:
+
 linear-gradient(
 135deg,
-#0F172A,
-#1E40AF
+#020617,
+#1e40af
 );
 
+
+overflow:hidden;
+
 color:white;
+
 
 }
 
 
 
+
+
+.hero-glow{
+
+
+position:absolute;
+
+
+width:500px;
+
+height:500px;
+
+
+background:#38bdf8;
+
+
+filter:blur(150px);
+
+
+opacity:.25;
+
+
+top:-200px;
+
+right:-150px;
+
+
+}
+
+
+
+
+
 .hero-content{
+
 
 display:flex;
 
@@ -101,15 +148,58 @@ align-items:center;
 
 justify-content:space-between;
 
-gap:50px;
+gap:60px;
+
+
+position:relative;
+
 
 }
 
 
 
+
 .hero-text{
 
-width:50%;
+
+width:55%;
+
+
+}
+
+
+
+
+.hero-badge{
+
+
+display:inline-block;
+
+
+padding:10px 20px;
+
+
+border-radius:50px;
+
+
+background:
+
+rgba(255,255,255,.1);
+
+
+border:
+
+1px solid rgba(255,255,255,.2);
+
+
+backdrop-filter:blur(10px);
+
+
+margin-bottom:25px;
+
+
+font-size:14px;
+
 
 }
 
@@ -117,39 +207,127 @@ width:50%;
 
 .hero-text h1{
 
-font-size:55px;
 
-line-height:1.2;
+font-size:60px;
+
+line-height:1.15;
+
+font-weight:800;
+
 
 }
+
+
 
 
 .hero-text span{
 
-color:#38BDF8;
+
+background:
+
+linear-gradient(
+90deg,
+#38bdf8,
+#60a5fa
+);
+
+
+-webkit-background-clip:text;
+
+
+color:transparent;
+
 
 }
 
-
-
-.hero-text p{
-
-margin:25px 0;
-
-font-size:18px;
-
-color:#dbeafe;
-
-}
 
 
 
 .hero-image{
 
+
 width:40%;
+
 
 }
 
+
+
+
+.image-card{
+
+
+padding:20px;
+
+
+border-radius:30px;
+
+
+background:
+
+rgba(255,255,255,.1);
+
+
+backdrop-filter:
+
+blur(20px);
+
+
+border:
+
+1px solid rgba(255,255,255,.2);
+
+
+box-shadow:
+
+0 30px 80px rgba(0,0,0,.3);
+
+
+}
+
+
+
+
+
+.hero-stats{
+
+
+display:flex;
+
+
+gap:50px;
+
+
+margin-top:50px;
+
+
+}
+
+
+
+
+
+.hero-stats h3{
+
+
+font-size:35px;
+
+color:#38bdf8;
+
+
+}
+
+
+
+
+
+.hero-stats p{
+
+
+color:#cbd5e1;
+
+
+}
 
 
 
@@ -509,6 +687,206 @@ font-size:28px;
 color:white;
 
 cursor:pointer;
+
+
+}
+
+
+
+/* =========================
+ TRUST SECTION
+========================= */
+
+
+.trust-section{
+
+
+padding:100px 0;
+
+
+background:#f8fafc;
+
+
+}
+
+
+
+
+
+.trust-content{
+
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:60px;
+
+
+}
+
+
+
+
+
+.trust-text{
+
+
+width:45%;
+
+
+}
+
+
+
+
+.small-title{
+
+
+color:#2563EB;
+
+font-size:14px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+
+}
+
+
+
+
+
+.trust-text h2{
+
+
+font-size:45px;
+
+line-height:1.2;
+
+margin:20px 0;
+
+
+color:#0F172A;
+
+
+}
+
+
+
+
+
+.trust-text p{
+
+
+color:#64748B;
+
+line-height:1.8;
+
+font-size:18px;
+
+
+}
+
+
+
+
+
+
+.trust-stats{
+
+
+width:50%;
+
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:25px;
+
+
+}
+
+
+
+
+
+
+.stat-card{
+
+
+padding:35px;
+
+
+background:white;
+
+
+border-radius:25px;
+
+
+box-shadow:
+
+0 20px 50px rgba(15,23,42,.08);
+
+
+border:
+
+1px solid #e2e8f0;
+
+
+transition:.3s;
+
+
+}
+
+
+
+
+
+.stat-card:hover{
+
+
+transform:
+
+translateY(-10px);
+
+
+border-color:#38BDF8;
+
+
+box-shadow:
+
+0 25px 60px rgba(37,99,235,.15);
+
+
+}
+
+
+
+
+
+.stat-card h3{
+
+
+font-size:45px;
+
+color:#2563EB;
+
+
+}
+
+
+
+.stat-card p{
+
+
+margin-top:10px;
+
+color:#64748B;
 
 
 }
