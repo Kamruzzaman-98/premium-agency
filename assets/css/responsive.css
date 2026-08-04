@@ -288,3 +288,120 @@ margin-top:20px;
 
 
 }
+
+
+
+@media(max-width:991px){
+
+
+.process-section{
+
+padding:70px 0;
+
+}
+
+
+.process-section h2{
+
+font-size:32px;
+
+}
+
+
+}
+
+
+@media(max-width:991px){
+
+
+.technology-section{
+
+padding:70px 0;
+
+}
+
+
+.technology-section h2{
+
+font-size:32px;
+
+}
+
+
+.tech-card{
+
+height:140px;
+
+}
+
+
+.tech-card i{
+
+font-size:40px;
+
+}
+
+
+}
+
+
+
+@media(max-width:991px){
+
+
+.faq-section{
+
+padding:70px 0;
+
+}
+
+
+.faq-section h2{
+
+font-size:32px;
+
+}
+
+
+}
+
+
+
+@media(max-width:991px){
+
+
+.service-cta{
+
+padding:70px 0;
+
+}
+
+
+
+.service-cta-box{
+
+padding:40px 25px;
+
+text-align:center;
+
+}
+
+
+
+.service-cta-box h2{
+
+font-size:32px;
+
+}
+
+
+.service-cta-box .btn{
+
+margin-top:25px;
+
+width:100%;
+
+}
+
+
+}
