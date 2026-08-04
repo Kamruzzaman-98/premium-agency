@@ -114,3 +114,68 @@ updateCounter();
 
 
 });
+
+
+// Portfolio Filter
+
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+
+const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+
+
+filterButtons.forEach(button=>{
+
+
+button.addEventListener("click",()=>{
+
+
+let filter = button.getAttribute("data-filter");
+
+
+
+filterButtons.forEach(btn=>{
+
+btn.classList.remove("active");
+
+});
+
+
+button.classList.add("active");
+
+
+
+portfolioItems.forEach(item=>{
+
+
+let category =
+item.getAttribute("data-category");
+
+
+
+if(filter==="all" || filter===category){
+
+
+item.style.display="block";
+
+
+}
+
+else{
+
+
+item.style.display="none";
+
+
+}
+
+
+
+});
+
+
+});
+
+
+});

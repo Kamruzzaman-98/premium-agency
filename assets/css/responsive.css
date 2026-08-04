@@ -405,3 +405,36 @@ width:100%;
 
 
 }
+
+
+@media(max-width:991px){
+
+.portfolio-cta{
+
+padding:70px 0;
+
+}
+
+.portfolio-cta-box{
+
+padding:40px 25px;
+
+text-align:center;
+
+}
+
+.portfolio-cta-box h2{
+
+font-size:32px;
+
+}
+
+.portfolio-cta-box .btn{
+
+margin-top:25px;
+
+width:100%;
+
+}
+
+}
