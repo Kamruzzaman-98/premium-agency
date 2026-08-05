@@ -1,216 +1,118 @@
-
-
 console.log("ABC Web Solutions Loaded");
 
 const navbar = document.querySelector(".navbar");
 const topbar = document.querySelector(".topbar");
 
 window.addEventListener("scroll", function () {
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
 
-    if (window.scrollY > 50) {
-
-        navbar.classList.add("scrolled");
-
-        if(topbar){
-            topbar.classList.add("hide");
-        }
-
-    } else {
-
-        navbar.classList.remove("scrolled");
-
-        if(topbar){
-            topbar.classList.remove("hide");
-        }
-
+    if (topbar) {
+      topbar.classList.add("hide");
     }
+  } else {
+    navbar.classList.remove("scrolled");
 
+    if (topbar) {
+      topbar.classList.remove("hide");
+    }
+  }
 });
-
 
 // Back To Top
 
 const backTop = document.querySelector(".back-top");
 
-
-window.addEventListener("scroll",()=>{
-
-
-if(window.scrollY > 400){
-
-backTop.classList.add("show");
-
-}
-
-else{
-
-backTop.classList.remove("show");
-
-}
-
-
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 400) {
+    backTop.classList.add("show");
+  } else {
+    backTop.classList.remove("show");
+  }
 });
-
 
 // Counter Animation
 
-
 const counters = document.querySelectorAll(".counter");
 
+counters.forEach((counter) => {
+  counter.innerText = "0";
 
-counters.forEach(counter=>{
+  const updateCounter = () => {
+    const target = +counter.getAttribute("data-target");
 
+    const current = +counter.innerText;
 
-counter.innerText="0";
+    const increment = target / 100;
 
+    if (current < target) {
+      counter.innerText = Math.ceil(current + increment);
 
-const updateCounter=()=>{
+      setTimeout(updateCounter, 20);
+    } else {
+      counter.innerText = target;
+    }
+  };
 
-
-const target=+counter.getAttribute("data-target");
-
-
-const current=+counter.innerText;
-
-
-const increment=target/100;
-
-
-
-if(current < target){
-
-
-counter.innerText=Math.ceil(current+increment);
-
-
-setTimeout(updateCounter,20);
-
-
-}
-
-else{
-
-
-counter.innerText=target;
-
-
-}
-
-
-}
-
-
-updateCounter();
-
-
+  updateCounter();
 });
 
-
 // Portfolio Filter
-
 
 const filterButtons = document.querySelectorAll(".filter-btn");
 
 const portfolioItems = document.querySelectorAll(".portfolio-item");
 
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    let filter = button.getAttribute("data-filter");
 
+    filterButtons.forEach((btn) => {
+      btn.classList.remove("active");
+    });
 
-filterButtons.forEach(button=>{
+    button.classList.add("active");
 
+    portfolioItems.forEach((item) => {
+      let category = item.getAttribute("data-category");
 
-button.addEventListener("click",()=>{
-
-
-let filter = button.getAttribute("data-filter");
-
-
-
-filterButtons.forEach(btn=>{
-
-btn.classList.remove("active");
-
+      if (filter === "all" || filter === category) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
 });
 
+// PRELOADER
 
-button.classList.add("active");
+window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
 
+  preloader.style.opacity = "0";
 
-
-portfolioItems.forEach(item=>{
-
-
-let category =
-item.getAttribute("data-category");
-
-
-
-if(filter==="all" || filter===category){
-
-
-item.style.display="block";
-
-
-}
-
-else{
-
-
-item.style.display="none";
-
-
-}
-
-
-
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 500);
 });
 
+// SCROLL PROGRESS
 
+window.addEventListener("scroll", () => {
+  const scrollTop = document.documentElement.scrollTop;
+
+  const scrollHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+
+  const percent = (scrollTop / scrollHeight) * 100;
+
+  document.getElementById("progress-bar").style.width = percent + "%";
 });
-
-
-});
-
-
-
-/*=================================
-PRELOADER
-==================================*/
-
-window.addEventListener("load",()=>{
-
-const preloader=document.getElementById("preloader");
-
-preloader.style.opacity="0";
-
-setTimeout(()=>{
-
-preloader.style.display="none";
-
-},500);
-
-});
-
-
-/*=================================
-SCROLL PROGRESS
-==================================*/
-
-window.addEventListener("scroll",()=>{
-
-const scrollTop=document.documentElement.scrollTop;
-
-const scrollHeight=document.documentElement.scrollHeight-document.documentElement.clientHeight;
-
-const percent=(scrollTop/scrollHeight)*100;
-
-document.getElementById("progress-bar").style.width=percent+"%";
-
-});
-
-
 
 AOS.init({
-    duration: 900,
-    once: true,
-    easing: "ease-in-out"
+  duration: 900,
+  once: true,
+  easing: "ease-in-out",
 });
