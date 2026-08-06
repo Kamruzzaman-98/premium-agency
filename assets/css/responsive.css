@@ -1,521 +1,265 @@
-@media(max-width:991px){
+@media (max-width: 991px) {
+  .section {
+    padding: 70px 0;
+  }
 
-.section{
+  .topbar {
+    display: none;
+  }
 
-padding:70px 0;
+  .navbar {
+    top: 0;
 
-}
+    background: #0f172a;
+  }
 
-}
+  .navbar-collapse {
+    margin-top: 20px;
 
+    padding: 20px;
 
-@media (max-width:991px){
+    border-radius: 16px;
 
-.topbar{
+    background: #0f172a;
+  }
 
-display:none;
+  .nav-link {
+    margin-left: 0;
 
-}
+    padding: 12px 0;
+  }
 
-.navbar{
+  .btn {
+    margin-top: 20px;
 
-top:0;
+    width: 100%;
+  }
 
-background:#0f172a;
+  .hero {
+    text-align: center;
 
-}
+    padding: 120px 0 80px;
+  }
 
-.navbar-collapse{
+  .hero-title {
+    font-size: 40px;
+  }
 
-margin-top:20px;
+  .hero-text {
+    margin: auto;
+  }
 
-padding:20px;
+  .hero-buttons .btn {
+    display: block;
 
-border-radius:16px;
+    width: 100%;
 
-background:#0f172a;
+    margin: 10px 0;
+  }
 
-}
+  .floating-card {
+    display: none;
+  }
 
-.nav-link{
+  .stats {
+    padding: 50px 0;
+  }
 
-margin-left:0;
+  .stat-box h2 {
+    font-size: 35px;
+  }
 
-padding:12px 0;
+  .about-section {
+    padding: 70px 0;
+  }
 
-}
+  .about-content h2 {
+    font-size: 32px;
+  }
 
-.btn{
+  .experience-box {
+    right: 15px;
 
-margin-top:20px;
+    bottom: 15px;
 
-width:100%;
+    padding: 20px;
+  }
 
-}
+  .services-section {
+    padding: 70px 0;
+  }
 
-}
+  .services-section h2 {
+    font-size: 32px;
+  }
 
+  .service-card {
+    padding: 30px 25px;
+  }
 
+  .why-section {
+    padding: 70px 0;
+  }
 
-@media (max-width:991px){
+  .why-section h2 {
+    font-size: 32px;
+  }
 
-.hero{
+  .skills-box {
+    padding: 30px;
+  }
 
-text-align:center;
+  .testimonial-section {
+    padding: 70px 0;
+  }
 
-padding:120px 0 80px;
+  .testimonial-section h2 {
+    font-size: 32px;
+  }
 
-}
+  .cta-section {
+    padding: 70px 0;
+  }
 
-.hero-title{
+  .cta-box {
+    padding: 40px 25px;
 
-font-size:40px;
+    text-align: center;
+  }
 
-}
+  .cta-box h2 {
+    font-size: 32px;
+  }
 
-.hero-text{
+  .cta-box .btn {
+    display: block;
 
-margin:auto;
+    width: 100%;
 
-}
+    margin: 15px 0 0;
+  }
 
-.hero-buttons .btn{
+  .footer {
+    padding: 60px 0 20px;
+  }
 
-display:block;
+  .footer-bottom {
+    margin-top: 20px;
+  }
 
-width:100%;
+  .process-section {
+    padding: 70px 0;
+  }
 
-margin:10px 0;
+  .process-section h2 {
+    font-size: 32px;
+  }
 
-}
+  .technology-section {
+    padding: 70px 0;
+  }
 
-.floating-card{
+  .technology-section h2 {
+    font-size: 32px;
+  }
 
-display:none;
+  .tech-card {
+    height: 140px;
+  }
 
-}
+  .tech-card i {
+    font-size: 40px;
+  }
 
-}
+  .faq-section {
+    padding: 70px 0;
+  }
 
+  .faq-section h2 {
+    font-size: 32px;
+  }
 
+  .service-cta {
+    padding: 70px 0;
+  }
 
-@media(max-width:768px){
+  .service-cta-box {
+    padding: 40px 25px;
 
+    text-align: center;
+  }
 
-.stats{
+  .service-cta-box h2 {
+    font-size: 32px;
+  }
 
-padding:50px 0;
+  .service-cta-box .btn {
+    margin-top: 25px;
 
-}
+    width: 100%;
+  }
 
+  .portfolio-cta {
+    padding: 70px 0;
+  }
 
-.stat-box h2{
+  .portfolio-cta-box {
+    padding: 40px 25px;
 
-font-size:35px;
+    text-align: center;
+  }
 
-}
+  .portfolio-cta-box h2 {
+    font-size: 32px;
+  }
 
+  .portfolio-cta-box .btn {
+    margin-top: 25px;
 
-}
+    width: 100%;
+  }
 
+  .contact-section {
+    padding: 70px 0;
+  }
 
+  .contact-section h2 {
+    font-size: 32px;
+  }
 
-@media(max-width:991px){
+  .contact-form {
+    padding: 25px;
+  }
 
+  .contact-cta {
+    padding: 70px 0;
+  }
 
-.about-section{
+  .contact-cta-box {
+    padding: 40px 25px;
 
-padding:70px 0;
+    text-align: center;
+  }
 
-}
+  .contact-cta-box h2 {
+    font-size: 32px;
+  }
 
+  .contact-cta-box .btn {
+    width: 100%;
 
-.about-content h2{
+    margin-top: 25px;
+  }
 
-font-size:32px;
+  .office-section {
+    padding: 70px 0;
+  }
 
-}
+  .office-map iframe {
+    min-height: 350px;
+  }
 
-
-.experience-box{
-
-right:15px;
-
-bottom:15px;
-
-padding:20px;
-
-}
-
-
-}
-
-
-@media(max-width:991px){
-
-
-.services-section{
-
-padding:70px 0;
-
-}
-
-
-.services-section h2{
-
-font-size:32px;
-
-}
-
-
-.service-card{
-
-padding:30px 25px;
-
-}
-
-
-}
-
-
-
-@media(max-width:991px){
-
-
-.why-section{
-
-padding:70px 0;
-
-}
-
-
-.why-section h2{
-
-font-size:32px;
-
-}
-
-
-.skills-box{
-
-padding:30px;
-
-}
-
-
-}
-
-
-@media(max-width:991px){
-
-
-.testimonial-section{
-
-padding:70px 0;
-
-}
-
-
-.testimonial-section h2{
-
-font-size:32px;
-
-}
-
-
-}
-
-
-
-@media(max-width:991px){
-
-
-.cta-section{
-
-padding:70px 0;
-
-}
-
-
-.cta-box{
-
-padding:40px 25px;
-
-text-align:center;
-
-}
-
-
-
-.cta-box h2{
-
-font-size:32px;
-
-}
-
-
-
-.cta-box .btn{
-
-display:block;
-
-width:100%;
-
-margin:15px 0 0;
-
-}
-
-
-
-}
-
-
-@media(max-width:991px){
-
-
-.footer{
-
-padding:60px 0 20px;
-
-}
-
-
-.footer-bottom{
-
-margin-top:20px;
-
-}
-
-
-}
-
-
-
-@media(max-width:991px){
-
-
-.process-section{
-
-padding:70px 0;
-
-}
-
-
-.process-section h2{
-
-font-size:32px;
-
-}
-
-
-}
-
-
-@media(max-width:991px){
-
-
-.technology-section{
-
-padding:70px 0;
-
-}
-
-
-.technology-section h2{
-
-font-size:32px;
-
-}
-
-
-.tech-card{
-
-height:140px;
-
-}
-
-
-.tech-card i{
-
-font-size:40px;
-
-}
-
-
-}
-
-
-
-@media(max-width:991px){
-
-
-.faq-section{
-
-padding:70px 0;
-
-}
-
-
-.faq-section h2{
-
-font-size:32px;
-
-}
-
-
-}
-
-
-
-@media(max-width:991px){
-
-
-.service-cta{
-
-padding:70px 0;
-
-}
-
-
-
-.service-cta-box{
-
-padding:40px 25px;
-
-text-align:center;
-
-}
-
-
-
-.service-cta-box h2{
-
-font-size:32px;
-
-}
-
-
-.service-cta-box .btn{
-
-margin-top:25px;
-
-width:100%;
-
-}
-
-
-}
-
-
-@media(max-width:991px){
-
-.portfolio-cta{
-
-padding:70px 0;
-
-}
-
-.portfolio-cta-box{
-
-padding:40px 25px;
-
-text-align:center;
-
-}
-
-.portfolio-cta-box h2{
-
-font-size:32px;
-
-}
-
-.portfolio-cta-box .btn{
-
-margin-top:25px;
-
-width:100%;
-
-}
-
-}
-
-
-
-@media(max-width:991px){
-
-.contact-section{
-
-padding:70px 0;
-
-}
-
-.contact-section h2{
-
-font-size:32px;
-
-}
-
-.contact-form{
-
-padding:25px;
-
-}
-
-}
-
-
-
-@media(max-width:991px){
-
-.contact-cta{
-
-padding:70px 0;
-
-}
-
-.contact-cta-box{
-
-padding:40px 25px;
-
-text-align:center;
-
-}
-
-.contact-cta-box h2{
-
-font-size:32px;
-
-}
-
-.contact-cta-box .btn{
-
-width:100%;
-
-margin-top:25px;
-
-}
-
-}
-
-
-@media(max-width:991px){
-
-.office-section{
-
-padding:70px 0;
-
-}
-
-.office-map iframe{
-
-min-height:350px;
-
-}
-
-.office-card{
-
-padding:25px;
-
-}
-
+  .office-card {
+    padding: 25px;
+  }
 }
